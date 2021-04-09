@@ -6,11 +6,11 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/19 16:11:21 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/02/20 11:06:01 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/04/09 19:24:28 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_lst.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {

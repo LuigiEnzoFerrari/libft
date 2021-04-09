@@ -6,11 +6,11 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/18 19:13:12 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/02/19 13:57:45 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/04/09 19:24:35 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_lst.h"
 
 t_list	*ft_lstnew(void *content)
 {

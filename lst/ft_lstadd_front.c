@@ -6,11 +6,11 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/19 12:40:11 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/02/19 13:47:41 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/04/09 19:24:25 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_lst.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

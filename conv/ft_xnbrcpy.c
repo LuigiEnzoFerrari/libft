@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
+/*   ft_xnbrcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/14 18:32:47 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 18:49:10 by lenzo-pe         ###   ########.fr       */
+/*   Created: 2021/04/08 22:48:48 by lenzo-pe          #+#    #+#             */
+/*   Updated: 2021/04/09 13:09:21 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "ft_conv.h"
 
-size_t	ft_nbrlen(int n)
+char	*ft_xnbrcpy(char *dest, unsigned n)
 {
-	size_t	i;
+	size_t	len;
 
-	if (!n)
-		return(1);
-	i = 0;
-	while (n)
+	len = ft_xnbrlen(n);
+	dest[len] = '\0';
+	while (len--)
 	{
-		n /= 10;
-		i++;
+		dest[len] = ft_xtochar(n);
+		n /= 16;	
 	}
-	return (i);
+	return (dest);
 }

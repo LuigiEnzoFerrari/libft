@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
+/*   ft_utochar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/14 18:32:47 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 18:49:10 by lenzo-pe         ###   ########.fr       */
+/*   Created: 2021/04/09 12:50:23 by lenzo-pe          #+#    #+#             */
+/*   Updated: 2021/04/09 12:51:21 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "ft_conv.h"
 
-size_t	ft_nbrlen(int n)
+int		ft_utochar(unsigned n)
 {
-	size_t	i;
-
-	if (!n)
-		return(1);
-	i = 0;
-	while (n)
-	{
-		n /= 10;
-		i++;
-	}
-	return (i);
+	return ((n % 10) + '0');
 }

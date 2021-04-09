@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
+/*   ft_unbrlen.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/14 18:32:47 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 18:49:10 by lenzo-pe         ###   ########.fr       */
+/*   Created: 2021/04/07 18:42:52 by lenzo-pe          #+#    #+#             */
+/*   Updated: 2021/04/07 19:14:04 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "ft_math.h"
 
-size_t	ft_nbrlen(int n)
+size_t	ft_unbrlen(unsigned n)
 {
 	size_t	i;
 

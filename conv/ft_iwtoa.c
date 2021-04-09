@@ -6,27 +6,16 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/31 13:49:34 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/03/31 15:32:27 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/04/08 22:13:51 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-static void	ft_itoc(char *str, int n, int i)
-{
-	long int	num;
-
-	num = n;
-	if (n < 0)
-		num *= -1;
-	if (num >= 10)
-		ft_itoc(str, (num / 10), i - 1);
-	str[i] = ((num % 10) + '0');
-}
+#include "ft_conv.h"
 
 char		*ft_iwtoa(int n, size_t w)
 {
 	char	*str;
+	char	*ptr;
 	size_t	len;
 
 	len = ft_nbrlen(n);
@@ -34,15 +23,17 @@ char		*ft_iwtoa(int n, size_t w)
 		len++;
 	if (w > len)
 		w -= len;
-	else 
+	else
 		w = 0;
 	str = (char *)malloc(sizeof(char) * (len + w + 1));
 	if (!str)
 		return (NULL);
-	ft_memset(str + 1, '0', w);
-	ft_itoc(str + w, n, len - 1);
+	ptr = str;
 	if (n < 0)
-		str[0] = '-';
+		*str++ = '-';
+	ft_memset(str, '0', w);
+	n = ft_abs(n);
+	ft_nbrcpy(str + w, n);
 	str[len + w] = '\0';
-	return (str);
+	return (ptr);
 }

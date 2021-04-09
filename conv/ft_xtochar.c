@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
+/*   ft_xtochar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/14 18:32:47 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 18:49:10 by lenzo-pe         ###   ########.fr       */
+/*   Created: 2021/04/08 22:32:24 by lenzo-pe          #+#    #+#             */
+/*   Updated: 2021/04/09 13:39:15 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-size_t	ft_nbrlen(int n)
+int		ft_xtochar(unsigned n)
 {
-	size_t	i;
-
-	if (!n)
-		return(1);
-	i = 0;
-	while (n)
-	{
-		n /= 10;
-		i++;
-	}
-	return (i);
+	n %= 16;
+	if (n >= 10)
+		n +=  87;
+	else
+		n += 48;
+	return (n);
 }

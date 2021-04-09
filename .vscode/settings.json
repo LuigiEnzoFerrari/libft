@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"ft_conv.h": "c",
+		"libft.h": "c",
+		"ft_math.h": "c",
+		"ft_string.h": "c"
+	}
+}

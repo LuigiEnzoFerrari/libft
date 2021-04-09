@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
+/*   ft_utoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/14 18:32:47 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 18:49:10 by lenzo-pe         ###   ########.fr       */
+/*   Created: 2021/04/09 13:22:29 by lenzo-pe          #+#    #+#             */
+/*   Updated: 2021/04/09 13:44:18 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "ft_conv.h"
 
-size_t	ft_nbrlen(int n)
+char	*ft_utoa(unsigned n)
 {
-	size_t	i;
+	size_t	len;
+	char	*str;
 
-	if (!n)
-		return(1);
-	i = 0;
-	while (n)
-	{
-		n /= 10;
-		i++;
-	}
-	return (i);
+	len = ft_unbrlen(n) + 1;
+	str = (char *)malloc(sizeof(char) * len);
+	ft_unbrcpy(str, n);
+	return (str);
 }

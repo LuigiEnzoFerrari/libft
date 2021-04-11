@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/06 21:09:13 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 19:30:32 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/04/10 12:16:22 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,5 @@
 # include "./lst/ft_lst.h"
 # include "./put/ft_put.h"
 # include "./math/ft_math.h"
-
 
 #endif

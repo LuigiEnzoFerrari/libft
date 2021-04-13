@@ -2,9 +2,10 @@ NAME	= libft.a
 CFLAGS	= -Wall -Wextra -Werror
 CC		= clang 
 
-DIRS	:= ctype/ string/ math/ conv/ lst/ put/
+DIRS	:= ctype/ math/ conv/ lst/ put/ string/
 
-SRC 	:= $(foreach dir, $(DIRS), $(addsuffix *.c, $(DIRS)))
+SRC		:= $(addsuffix *.c, $(DIRS))
+#SRC 	:= $(foreach dir, $(DIRS), $(wildcard $(DIRS)*.c))
 OBS		:= *.o
 
 .PHONY: all clean fclean re bonus
@@ -12,13 +13,14 @@ OBS		:= *.o
 all: $(NAME)
 
 $(NAME):
+#	$(SRC)
 	$(CC) $(CFLAGS) -c $(SRC)
 	ar -rcs $(NAME) $(OBS)
 
 clean:
-	rm -rf *.o
+	rm -rf $(OBS)
 
 fclean: clean
-	rm -rf *.a
+	rm -rf $(NAME)
 
 re: fclean all

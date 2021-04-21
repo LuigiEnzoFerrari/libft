@@ -4,7 +4,7 @@
 
 Libft is a open source C library, with several function to help all kinds of projects in development. This is a very well organized and more completed version of the [Ecole 42](https://www.42.fr/en/) libft project.
 
->Complete libft: [Wiki](# "Kisara").
+**Read:** [![LibftWiki](https://github.com/LuigiEnzoFerrari/material-design-icons/blob/main/src/github/actions/SVG/Github-wiki.svg)](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki "Wiki Libft").
 
 ## Fuctions Tags
 

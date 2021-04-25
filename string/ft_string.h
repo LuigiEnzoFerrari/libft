@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:27:25 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 16:10:50 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/04/25 20:26:58 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ char	*ft_strcat(char *dest, const char *src);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 void	*ft_memchr(const void *ptr, int c, size_t num);
+char	*ft_strnstr(const char *str, const char *substr, size_t len);
+char	*ft_strstr(const char *str, const char *substr);
 
 char	*ft_strndup(const char *str, size_t len);
 char	*ft_strtrim(char const *s1, char const *set);

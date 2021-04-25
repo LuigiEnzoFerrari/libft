@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 10:10:50 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 02:20:04 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/04/25 20:22:33 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strrchr(const char *str, int c)
 	if ((char)c == '\0')
 		return ((char *)str + len);
 	while (len--)
-		if (*(str + len) == c)
+		if (*(str + len) == (char)c)
 			return ((char *)(str + len));
 	return (NULL);
 }

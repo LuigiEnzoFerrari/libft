@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/04 16:30:54 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/06 22:35:54 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/04/25 00:35:50 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_strncmp(const char *str1, const char *str2, size_t num)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	if (!num)

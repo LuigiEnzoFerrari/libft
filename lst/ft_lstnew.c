@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/18 19:13:12 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/09 19:24:35 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/04/24 15:18:08 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ t_list	*ft_lstnew(void *content)
 	t_list *list;
 
 	list = (t_list *)malloc(sizeof(t_list));
-	if (list == 0)
-		return (0);
+	if (!list)
+		return (NULL);
 	list->content = content;
 	list->next = 0;
 	return (list);

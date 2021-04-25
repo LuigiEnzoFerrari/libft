@@ -2,24 +2,34 @@
 
 ## About
 
-Libft is a open source C library, with several function to help all kinds of projects in development. This is a very well organized and more completed version of the [Ecole 42](https://www.42.fr/en/) libft project.
+Libft is a open source C library, with several function to help all kinds of projects in development. This is a very well organized and more completed version of the [Ecole 42](https://www.42.fr/en/ "42 schoool") libft project.
 
 **Read:** [![LibftWiki](https://github.com/LuigiEnzoFerrari/material-design-icons/blob/main/src/github/actions/SVG/Github-wiki.svg)](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki "Wiki Libft").
 
-## Fuctions Tags
+## How to use it
 
-| Tags | Description |
-| ---- | --------- |
-|[Ctype][link]		| Returns 1 if finds the character type, 0 otherwise|
-|[Copying][link]	| Copys n bytes from source to destiny |
-|[Comparing][link]	| Compares byte by byte of two given variables |
-|[Length][link]		| Returns the length of a variable |
-|[List][link]		| Helpful functions to linked list|
-|[Put][link]		| Outputs any type of content |
-|[Converting][link]	| Convert from a type to another|
-|[Stringing][link]	| String manipulation |
-|[Math][link]		| Make any type of operation need it |
+First clone the repository:
 
+```sh
+	git clone http://github.com/LuigiEnzoFerrari/42School_Libft libft
+```
 
-[link]: # "BlueEyes"
+Then go inside the project diretory and use the comand make to generate the **.a** file.
+
+```sh
+	cd/libft
+	make
+```
+
+To clean the **.o** files use the command **make clean**.
+
+```sh
+	make clean
+```
+
+Now you have a static library **.a** with all functions from the [libft](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki/libft1 "libft by header type"). Now you can compile your project with the static library.
+
+```sh
+	clang myproject.c libft/libft.a -o myproject.out
+```
 

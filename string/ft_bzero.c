@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/09 20:31:05 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/22 14:28:54 by lenzo-pe         ###   ########.fr       */
+/*   Created: 2021/04/25 17:25:44 by lenzo-pe          #+#    #+#             */
+/*   Updated: 2021/04/25 17:38:14 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t len)
+void	ft_bzero(void *str, size_t n)
 {
-	size_t	srclen;
+	unsigned char *ptr;
 
-	if (!src)
-		return (0);
-	srclen = ft_strlen(src);
-	if (len == 0)
-		return (srclen);
-	if (srclen >= len)
-	{
-		ft_memcpy(dest, src, len - 1);
-		dest[len - 1] = '\0';
-		return (srclen);
-	}
-	ft_memcpy(dest, src, srclen);
-	dest[srclen] = '\0';
-	return (srclen);
+	ptr = (unsigned char *)str;
+	while (n--)
+		*ptr++ = 0;
 }

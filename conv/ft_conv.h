@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 16:46:09 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/09 13:39:39 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/04/27 04:04:58 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #define FT_CONV_H
 #include "../libft.h"
 
-int		ft_tochar(int n);
+int		ft_tochar(long n);
 int		ft_xtochar(unsigned n);
 int		ft_utochar(unsigned n);
 

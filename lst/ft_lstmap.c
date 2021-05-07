@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/19 17:41:05 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/25 17:43:50 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 17:34:17 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *list;
+	t_list	*list;
 
 	if (!lst)
 		return (NULL);

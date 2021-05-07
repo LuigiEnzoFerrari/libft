@@ -6,16 +6,16 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 20:20:26 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/08 01:41:17 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 17:15:29 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
-int		ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
-	int		holder;
-	int		sign;
+	int	holder;
+	int	sign;
 
 	sign = 1;
 	holder = 0;

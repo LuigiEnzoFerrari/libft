@@ -6,13 +6,13 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/31 13:49:34 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/08 22:13:51 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 17:22:20 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
-char		*ft_iwtoa(int n, size_t w)
+char	*ft_iwtoa(int n, size_t w)
 {
 	char	*str;
 	char	*ptr;

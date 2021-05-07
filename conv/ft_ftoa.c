@@ -6,20 +6,19 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/31 13:41:37 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 16:47:08 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 17:20:13 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
-static	long double ft_round(long double n)
+static long double	ft_round(long double n)
 {
-	long double right;
-	long unsigned left;
+	long double		right;
+	long unsigned	left;
 
 	left = (unsigned)n;
 	right = n - (double)left;
-
 	if (right > 0.5)
 		n += 0.5;
 	else if (right == 0.5)
@@ -27,13 +26,13 @@ static	long double ft_round(long double n)
 		if ((left % 2))
 			n += 0.5;
 	}
-	return((unsigned long)n);
+	return ((unsigned long)n);
 }
 
-static	char *ft_left(char *str, size_t len, unsigned long right, long double n)
+static char	*ft_left(char *str, size_t len, unsigned long right, long double n)
 {
 	str = ft_joindeld(str, ".");
-	while(len--)
+	while (len--)
 	{
 		n *= 10;
 		right = n;
@@ -43,11 +42,11 @@ static	char *ft_left(char *str, size_t len, unsigned long right, long double n)
 	return (str);
 }
 
-char		*ft_ftoa(long double n, size_t len)
+char	*ft_ftoa(long double n, size_t len)
 {
+	char			*str;
 	unsigned long	left;
 	unsigned long	right;
-	char			*str;
 
 	right = 0;
 	if (!len)

@@ -6,14 +6,14 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 21:06:28 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/03/14 03:49:33 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 16:48:45 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isspace(int c)
+int	ft_isspace(int c)
 {
-	if (c == '\n' || c == '\t' || c == '\v' ||
-	c == '\r' || c == '\f' || c == ' ')
+	if (c == '\n' || c == '\t' || c == '\v'
+		|| c == '\r' || c == '\f' || c == ' ')
 		return (1);
 	return (0);
 }

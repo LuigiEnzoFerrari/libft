@@ -6,15 +6,15 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/16 01:26:58 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 16:09:34 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 14:59:55 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-size_t		ft_seqdigit(char *str)
+size_t	ft_seqdigit(char *str)
 {
-	size_t i;
+	size_t	i;
 
 	while (*str && !(ft_isdigit(*str)))
 		str++;

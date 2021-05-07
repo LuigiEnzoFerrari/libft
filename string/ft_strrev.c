@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 18:38:19 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/06 22:36:37 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 15:03:04 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_strrev(char *str)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	if (!str)
 		return ;

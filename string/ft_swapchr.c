@@ -6,13 +6,13 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 18:37:04 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/03/09 00:27:27 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 14:58:34 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_swapchr(char *a, char *b)
 {
-	char x;
+	char	x;
 
 	if (!a || !b)
 		return ;

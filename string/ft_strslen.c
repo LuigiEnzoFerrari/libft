@@ -6,13 +6,13 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/13 00:50:53 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/06 20:03:25 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 15:00:24 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-static int		ft_strncmp_temp(const char *str1, const char *str2, size_t num)
+static int	ft_strncmp_temp(const char *str1, const char *str2, size_t num)
 {
 	unsigned int	i;
 
@@ -22,7 +22,7 @@ static int		ft_strncmp_temp(const char *str1, const char *str2, size_t num)
 	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
 
-size_t			ft_strslen(const char *str, const char *substr)
+size_t	ft_strslen(const char *str, const char *substr)
 {
 	size_t	sub_len;
 	size_t	i;

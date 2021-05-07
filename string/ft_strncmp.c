@@ -6,13 +6,13 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/04 16:30:54 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/25 00:35:50 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 15:00:51 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-int		ft_strncmp(const char *str1, const char *str2, size_t num)
+int	ft_strncmp(const char *str1, const char *str2, size_t num)
 {
 	size_t	i;
 

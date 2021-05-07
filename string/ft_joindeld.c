@@ -6,13 +6,13 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/31 13:23:47 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 15:29:29 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 14:59:16 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-char		*ft_joindeld(char *s1, char const *s2)
+char	*ft_joindeld(char *s1, char const *s2)
 {
 	char	*ptr;
 	size_t	s1_len;

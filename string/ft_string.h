@@ -6,17 +6,17 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:27:25 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/25 20:26:58 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 15:09:55 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_STRING_H
-#define FT_STRING_H
+# define FT_STRING_H
 
-#include <string.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include "../ctype/ft_ctype.h"
+# include <string.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include "../ctype/ft_ctype.h"
 
 void	ft_memdel(void **ptr);
 void	ft_bzero(void *ptr, size_t num);
@@ -65,7 +65,7 @@ size_t	ft_strclen(const char *str, int c);
 size_t	ft_strslen(const char *str, const char *substr);
 size_t	ft_strnlen(const char *str, size_t maxlen);
 
-size_t		ft_nchar(char *str, int c);
-size_t		ft_ndigit(char *str);
+size_t	ft_nchar(char *str, int c);
+size_t	ft_ndigit(char *str);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 16:56:44 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 11:14:06 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 17:04:39 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr(int nb)
 {
-	unsigned int num;
+	size_t	num;
 
 	num = nb;
 	if (nb < 0)

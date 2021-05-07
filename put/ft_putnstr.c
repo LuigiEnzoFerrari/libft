@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/13 01:44:36 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 11:14:09 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 17:04:54 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnstr(char *str, int c)
 {
-	size_t i;
+	size_t	i;
 
 	i = ft_strclen(str, c);
 	if (str)

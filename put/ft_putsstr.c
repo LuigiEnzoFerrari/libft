@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/13 00:47:07 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 11:14:11 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 17:04:46 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putsstr(char *str, char *substr)
 {
-	size_t i;
+	size_t	i;
 
 	i = ft_strslen(str, substr);
 	if (str)

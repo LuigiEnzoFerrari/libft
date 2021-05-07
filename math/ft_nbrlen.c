@@ -6,18 +6,18 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 18:32:47 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 18:49:10 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 17:12:34 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "ft_math.h"
 
 size_t	ft_nbrlen(int n)
 {
 	size_t	i;
 
 	if (!n)
-		return(1);
+		return (1);
 	i = 0;
 	while (n)
 	{

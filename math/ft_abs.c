@@ -6,13 +6,13 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/13 16:57:20 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 18:35:44 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 17:10:56 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_math.h"
 
-int		ft_abs(int i)
+int	ft_abs(int i)
 {
 	if (i < 0)
 		i = -i;

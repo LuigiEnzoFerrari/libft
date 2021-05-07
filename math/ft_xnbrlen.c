@@ -6,13 +6,13 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/31 12:23:22 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/07 18:49:21 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/05/07 17:10:14 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_math.h"
 
-size_t	ft_xnbrlen(unsigned n)
+size_t	ft_xnbrlen(unsigned int n)
 {
 	size_t	i;
 

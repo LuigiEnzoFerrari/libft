@@ -1,4 +1,5 @@
 NAME = math.a
+
 CC = clang
 CFLAGS = -Wall -Werror -Wextra
 
@@ -7,12 +8,16 @@ OBS := $(SRC:%.c=%.o)
 
 all: $(NAME)
 
-$(NAME): $(OBS) ft_math.h
+$(NAME): $(OBS)
 	$(CC) $(CFLAGS) -c $(SRC)
 	ar -rcs $(NAME) $(OBS)
 
 clean:
-	rm -rf *.o
+	$(RM) $(OBS)
 
-fclean:
-	rm -rf *.o *.a
+fclean: clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re

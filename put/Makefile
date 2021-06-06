@@ -10,12 +10,16 @@ OBS = $(SRC:%.c=%.o)
 
 all: $(NAME)
 
-$(NAME): $(OBS) ft_put.h
+$(NAME): $(OBS)
 	$(CC) $(CFLAGS) -c $(SRC)
 	ar -rcs $(NAME) $(OBS)
 
 clean:
-	rm -rf $(OBS) *.ghc
+	$(RM) $(OBS)
 
 fclean: clean
-	rm -rf $(NAME)
+	$(RM) $(NAME)
+
+re:	fclean all
+
+.PHONY: all clean fclean all

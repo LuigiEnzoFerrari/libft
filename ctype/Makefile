@@ -6,16 +6,18 @@ CFLAGS = -Wall -Werror -Wextra
 SRC := $(wildcard *.c)
 OBS := $(SRC:%.c=%.o)
 
-.PHONY: all clean fclean
-
 all: $(NAME)
 
-$(NAME): $(OBS) ft_ctype.h
+$(NAME): $(OBS)
 	$(CC) $(CFLAGS) -c $(SRC)
 	ar -rcs $(NAME) $(OBS)
 
 clean:
-	rm -rf $(OBS) *.ghc
+	$(RM) $(OBS)
 
 fclean: clean
-	rm -rf $(NAME)
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re

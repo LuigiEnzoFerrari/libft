@@ -1,4 +1,5 @@
 NAME = conv.a
+
 CC = clang
 CFLAGS = -Wall -Werror -Wextra
 
@@ -7,12 +8,16 @@ OBS := $(SRC:%.c=%.o)
 
 all: $(NAME)
 
-$(NAME): $(OBS) ft_conv.h
+$(NAME): $(OBS)
 	$(CC) $(CFLAGS) -c $(SRC)
 	ar -rcs $(NAME) $(OBS)
 
 clean:
-	rm -rf *.o *.gch
+	$(RM) $(OBS)
 
 fclean: clean
-	rm -rf $(NAME)
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re

@@ -1,4 +1,5 @@
 NAME := printf.a
+
 CC := clang
 CFLAGS := -Wall -Werror -Wextra
 
@@ -14,4 +15,11 @@ $(OBS):
 	$(CC) $(CFLAGS) -c $(SRC)
 
 clean:
-	rm -rf $(OBS) $(NAME)
+	$(RM) $(OBS) $(NAME)
+
+fclean: clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re

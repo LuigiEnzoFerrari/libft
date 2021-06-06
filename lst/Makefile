@@ -6,8 +6,6 @@ CFLAGS	= -Wall -Wextra -Werror
 SRC		:= $(wildcard *.c)
 OBS		:= $(patsubst %.c, %.o, $(SRC))
 
-.PHONY: all clean fclean re
-
 all: $(NAME)
 
 $(NAME): $(OBS)
@@ -15,7 +13,11 @@ $(NAME): $(OBS)
 	ar -rcs $(NAME) $(OBS)
 
 clean:
-	rm $(OBS)
+	$(RM) $(OBS)
 
 fclean: clean
-	rm $(NAME)
+	$(RM) $(NAME)
+
+re: fclean
+
+.PHONY: all clean fclean re

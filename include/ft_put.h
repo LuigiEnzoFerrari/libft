@@ -6,14 +6,14 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 02:35:40 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/05/07 17:04:29 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/06 09:56:57 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PUT_H
 # define FT_PUT_H
 # include <unistd.h>
-# include "../string/ft_string.h"
+# include "ft_string.h"
 
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);

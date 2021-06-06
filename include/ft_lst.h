@@ -6,15 +6,15 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 18:51:11 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/05/07 17:35:53 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/06 10:22:46 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_LST_H
 # define FT_LST_H
 
+# include <stdlib.h>
 # include "ft_lst.h"
-# include "../libft.h"
 
 typedef struct s_list
 {

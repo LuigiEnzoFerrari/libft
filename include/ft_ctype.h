@@ -6,13 +6,14 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 02:35:48 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/05/07 16:49:46 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/06 10:22:14 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_CTYPE_H
 # define FT_CTYPE_H
-# include "../conv/ft_conv.h"
+
+# include "ft_conv.h"
 
 int	ft_isxdigit(int c);
 int	ft_isalnum(int c);

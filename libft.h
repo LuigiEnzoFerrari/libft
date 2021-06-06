@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/06 21:09:13 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/05/07 17:30:20 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/06 09:55:03 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
 # include <stdint.h>
 # include <stdio.h>
 
-# include "./ctype/ft_ctype.h"
-# include "./conv/ft_conv.h"
-# include "./string/ft_string.h"
-# include "./lst/ft_lst.h"
-# include "./put/ft_put.h"
-# include "./math/ft_math.h"
+# include "./include/ft_ctype.h"
+# include "./include/ft_conv.h"
+# include "./include/ft_string.h"
+# include "./include/ft_lst.h"
+# include "./include/ft_put.h"
+# include "./include/ft_math.h"
 
 #endif

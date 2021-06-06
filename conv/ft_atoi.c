@@ -6,11 +6,12 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 20:20:26 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/05/07 17:15:29 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/06 10:14:58 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
+#include <stdint.h>
 
 int	ft_atoi(const char *nptr)
 {

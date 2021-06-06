@@ -6,13 +6,16 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 16:46:09 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/05/07 17:27:10 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/06 10:22:08 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_CONV_H
 # define FT_CONV_H
-# include "../libft.h"
+# include <stddef.h>
+# include <stdlib.h>	
+# include "ft_math.h"
+# include "ft_string.h"
 
 int		ft_tochar(long n);
 int		ft_xtochar(unsigned int n);

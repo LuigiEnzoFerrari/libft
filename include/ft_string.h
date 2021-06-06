@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:27:25 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/05/07 15:09:55 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/06 09:56:09 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include "../ctype/ft_ctype.h"
+# include "ft_ctype.h"
 
 void	ft_memdel(void **ptr);
 void	ft_bzero(void *ptr, size_t num);

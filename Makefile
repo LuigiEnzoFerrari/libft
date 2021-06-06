@@ -5,16 +5,13 @@ CFLAGS	= -Wall -Wextra -Werror
 DIRS	:= ctype/ math/ conv/ lst/ put/ string/
 
 SRC		:= $(addsuffix *.c, $(DIRS))
-#SRC	:= $(foreach dir, $(DIRS), $(wildcard $(DIRS)*.c))
+INC		:= include/
 OBS		:= *.o
-
-.PHONY: all clean fclean re bonus
 
 all: $(NAME)
 
 $(NAME):
-#	$(SRC)
-	$(CC) $(CFLAGS) -c $(SRC)
+	$(CC) $(CFLAGS) -I $(INC) -c $(SRC)
 	ar -rcs $(NAME) $(OBS)
 
 clean:
@@ -24,3 +21,5 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re 

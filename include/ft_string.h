@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:27:25 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/06/08 17:08:39 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/08 18:54:47 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ void	ft_strdel(char **str);
 void	ft_strrev(char *str);
 void	ft_strclr(char *str);
 char	*ft_strdup(const char *str);
-char	*ft_strcpy(char *dest, const char *src);
-char	*ft_strcat(char *dest, const char *src);
 
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
@@ -52,8 +50,11 @@ char	**ft_split(char const *s, char c);
 int		ft_strcmp(const char *str1, const char *str2);
 int		ft_strncmp(const char *str1, const char *str2, size_t num);
 
+char	*ft_strcpy(char *dest, const char *src);
+char	*ft_strcat(char *dest, const char *src);
 char	*ft_strncat(char *dest, const char *src, size_t num);
 char	*ft_strncpy(char *dest, const char *src, size_t num);
+char	*ft_strccat(char *dest, char *src, int c);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t len);
 

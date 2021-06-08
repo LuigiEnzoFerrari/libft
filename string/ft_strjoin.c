@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/13 19:07:59 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/06 22:35:32 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/08 19:01:42 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,11 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
-	size_t	s1_len;
-	size_t	s2_len;
 	size_t	total_len;
 
 	if (!s1 || !s2)
 		return (NULL);
-	s1_len = ft_strlen(s1);
-	s2_len = ft_strlen(s2);
-	total_len = s2_len + s1_len;
+	total_len = ft_strlen(s1) + ft_strlen(s2);
 	ptr = (char *)malloc(sizeof(char) * (total_len + 1));
 	if (!ptr)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 12:44:26 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/04/06 22:35:52 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/08 17:44:38 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,8 @@ char	*ft_strncat(char *dest, const char *src, size_t num)
 	else
 		ft_strncpy(&dest[dest_len], src, num);
 	return (dest);
+}
+int main(void)
+{
+	
 }

@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/31 13:41:37 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/05/07 17:20:13 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/08 17:09:06 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static long double	ft_round(long double n)
 
 static char	*ft_left(char *str, size_t len, unsigned long right, long double n)
 {
-	str = ft_joindeld(str, ".");
+	str = ft_rejoin(str, ".");
 	while (len--)
 	{
 		n *= 10;

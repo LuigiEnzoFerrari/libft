@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:27:25 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/06/06 09:56:09 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/08 17:08:39 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_joindel(char *s1, char *s2);
-char	*ft_joindeld(char *s1, char const *s2);
+char	*ft_rejoin(char *s1, char const *s2);
 char	**ft_split(char const *s, char c);
 
 int		ft_strcmp(const char *str1, const char *str2);

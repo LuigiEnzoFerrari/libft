@@ -15,10 +15,10 @@ $(NAME):
 	ar -rcs $(NAME) $(OBS)
 
 clean:
-	rm -rf $(OBS)
+	$(RM) $(OBS)
 
 fclean: clean
-	rm -rf $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 

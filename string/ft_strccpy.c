@@ -1,37 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_joindeld.c                                      :+:      :+:    :+:   */
+/*   ft_strccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/31 13:23:47 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/06/08 17:07:31 by lenzo-pe         ###   ########.fr       */
+/*   Created: 2021/06/08 20:06:31 by lenzo-pe          #+#    #+#             */
+/*   Updated: 2021/06/08 20:33:26 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-char	*ft_rejoin(char *s1, char const *s2)
+char	*ft_strccpy(char *dest, const char *src, size_t c)
 {
-	char	*ptr;
-	size_t	s1_len;
-	size_t	s2_len;
-	size_t	total_len;
+	size_t	maxlen;
+	size_t	i;
 
-	if (!s1 || !s2)
-		return (NULL);
-	s1_len = ft_strlen(s1);
-	s2_len = ft_strlen(s2);
-	total_len = s2_len + s1_len;
-	ptr = (char *)malloc(sizeof(char) * (total_len + 1));
-	if (!ptr)
+	i = 0;
+	maxlen = ft_strclen(src, c);
+	while (i < maxlen)
 	{
-		ft_strdel(&s1);
-		return (NULL);
+		dest[i] = src[i];
+		i++;
 	}
-	ft_strcpy(ptr, s1);
-	ft_strcat(ptr, s2);
-	ft_strdel(&s1);
-	return (ptr);
+	dest[maxlen] = '\0';
+	return (dest);
 }

@@ -6,10 +6,12 @@ CFLAGS = -Wall -Werror -Wextra
 SRC := $(wildcard *.c)
 OBS := $(SRC:%.c=%.o)
 
+INC := ../include
+
 all: $(NAME)
 
-$(NAME): $(OBS)
-	$(CC) $(CFLAGS) -c $(SRC)
+$(NAME):
+	$(CC) $(CFLAGS) -I $(INC) -c $(SRC)
 	ar -rcs $(NAME) $(OBS)
 
 clean:

@@ -6,11 +6,9 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 11:23:48 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/06/08 20:11:55 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/13 10:00:02 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "ft_string.h"
 
 #include "ft_string.h"
 

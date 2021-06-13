@@ -5,12 +5,12 @@ CC = clang
 SRC := $(wildcard *.c)
 OBS := $(SRC:%.c=%.o)
 
-.PHONY: all clean
+INC := ../include
 
 all: $(NAME)
 
-$(NAME): $(OBS)
-	$(CC) $(CFLAGS) -c $(SRC)
+$(NAME):
+	$(CC) $(CFLAGS) -I $(INC) -c $(SRC)
 	ar -rcs $(NAME) $(OBS)
 
 clean:

@@ -1,10 +1,13 @@
-NAME = conv.a
+NAME := conv.a
 
-CC = clang
-CFLAGS = -Wall -Werror -Wextra
+CC := clang
+CFLAGS := -Wall -Werror -Wextra
 
-SRC := $(wildcard *.c)
-OBS := $(SRC:%.c=%.o)
+AUX_PATH := ../math
+AUX :=	$(wildcard $(AUX_PATH)/*.c)
+
+SRC := $(wildcard *.c) $(AUX)
+OBS := *.o
 
 INC := ../include
 

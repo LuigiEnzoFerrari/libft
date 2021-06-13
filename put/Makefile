@@ -1,18 +1,20 @@
-NAME = put.a
+NAME := put.a
 
-CC = clang
-CFLAGS = -Wall -Werror -Wextra
+CC := clang
+CFLAGS := -Wall -Werror -Wextra
 
-SRC = $(wildcard *.c)
-OBS = $(SRC:%.c=%.o)
+SRC := $(wildcard *.c)
+OBS := $(patsubst %.c, %.o, $(SRC))
 
-.PHONY: all clean fclean
+INC := ../include
 
 all: $(NAME)
 
 $(NAME): $(OBS)
-	$(CC) $(CFLAGS) -c $(SRC)
-	ar -rcs $(NAME) $(OBS)
+	@ar -rcs $(NAME) $(OBS)
+
+$(OBS):
+	@$(CC) $(CFLAGS) -c $(SRC) -I $(INC)
 
 clean:
 	$(RM) $(OBS)
@@ -20,6 +22,6 @@ clean:
 fclean: clean
 	$(RM) $(NAME)
 
-re:	fclean all
+re: fclean all
 
 .PHONY: all clean fclean all

@@ -4,7 +4,7 @@
 
 Libft is a open source C library, with several function to help all kinds of projects in development. This is a very well organized and more completed version of the [Ecole 42](https://www.42.fr/en/ "42 schoool") libft project.
 
-**Read:** [![LibftWiki](https://github.com/LuigiEnzoFerrari/material-design-icons/blob/main/src/github/actions/SVG/Github-wiki.svg)](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki "Wiki Libft").
+**Read:** [Libft Wiki](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki/libft3 "all functions")
 
 
 
@@ -16,22 +16,31 @@ First clone the repository:
 git clone http://github.com/LuigiEnzoFerrari/42School_Libft libft
 ```
 
-Then go inside the project diretory and use the comand make to generate the **.a** file.
+Then use command **make** inside the libft repository to generate a **libft.a** file.
+
 
 ```sh
-cd/libft
-make
+make -C <libft-path>
 ```
 
 To clean the **.o** files use the command **make clean**.
 
 ```sh
-make clean
+make clean -C <libft-path>
 ```
 
-Now you have a static library **.a** with all functions from the [libft](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki/libft1 "libft by header type"). Now you can compile your project with the static library.
+Now you have a static library **.a** with all functions from the [libft](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki/libft1 "libft by header type"). Now you can compile your project with the static library.  
+
+
+First include the libft.h on your **.c** file.
+
+```c
+#include <libft.h>
+```
+Then compile your project like the example below:
 
 ```sh
-clang myproject.c libft/libft.a -o myproject.out
+clang main.c -I <libft-path> -L <libft.a-path> -lft
 ```
 
+###[Libft Wiki](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki/libft3 "42 functions")

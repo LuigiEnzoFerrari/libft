@@ -43,4 +43,4 @@ Then compile your project like the example below:
 clang main.c -I <libft-path> -L <libft.a-path> -lft
 ```
 
-###[Libft Wiki](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki/libft3 "42 functions")
+**[Libft Wiki](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki/libft3 "42 functions")**

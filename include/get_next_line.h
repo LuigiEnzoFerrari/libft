@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/06 21:09:13 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/06/06 19:24:31 by lenzo-pe         ###   ########.fr       */
+/*   Created: 2021/02/28 23:30:57 by lenzo-pe          #+#    #+#             */
+/*   Updated: 2021/06/22 02:38:30 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-# include <unistd.h>
+# include <limits.h>
 # include <stdlib.h>
-# include <stddef.h>
-# include <stdint.h>
-# include <stdio.h>
+# include <sys/resource.h>
+# include "ft_string.h"
+# define BUFFER_SIZE	20
 
-# include "include/ft_ctype.h"
-# include "include/ft_conv.h"
-# include "include/ft_string.h"
-# include "include/ft_lst.h"
-# include "include/ft_put.h"
-# include "include/ft_math.h"
-# include "include/get_next_line.h"
+int		get_next_line(int fd, char **line);
 
 #endif

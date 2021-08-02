@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/28 23:08:06 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/06/21 23:49:18 by lenzo-pe         ###   ########.fr       */
+/*   Created: 2021/08/01 22:19:47 by lenzo-pe          #+#    #+#             */
+/*   Updated: 2021/08/01 22:19:48 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	get_next_line(int fd, char **line)
 	char		*buffer;
 	int			nbytes;
 
-	if (BUFFER_SIZE <= 0 || fd < 0  || !line)
+	if (BUFFER_SIZE <= 0 || fd < 0 || !line)
 		return (-1);
 	if (!save[fd])
 		save[fd] = ft_strdup("");

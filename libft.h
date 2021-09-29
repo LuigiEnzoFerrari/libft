@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/06 21:09:13 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/06/06 19:24:31 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/09/29 09:45:25 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,8 @@
 # include "include/ft_put.h"
 # include "include/ft_math.h"
 # include "include/get_next_line.h"
+# include "include/ft_string_array.h"
+# include "include/ft_put_array.h"
+
 
 #endif

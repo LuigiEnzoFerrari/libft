@@ -4,7 +4,7 @@ CFLAGS	= -Wall -Wextra -Werror
 
 INC		:= include/
 
-DIRS	:= ctype math conv lst put string gnl
+DIRS	:= ctype math conv lst put string gnl string_array put_array
 
 SRC		:= $(foreach dir, $(DIRS), $(wildcard $(dir)/*.c))
 OBS		:= $(patsubst %.c, %.o, $(SRC))

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_skipctype.c                                     :+:      :+:    :+:   */
+/*   ft_skip_c_type.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "ft_string.h"
 
-char	*ft_skipctype(char *str, int (f)(int), int a)
+char	*ft_skip_c_type(char *str, int (f)(int), int a)
 {
 	if (a)
 		while (f(*str))

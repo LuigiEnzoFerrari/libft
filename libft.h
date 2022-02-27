@@ -29,5 +29,4 @@
 # include "include/ft_string_array.h"
 # include "include/ft_put_array.h"
 
-
 #endif

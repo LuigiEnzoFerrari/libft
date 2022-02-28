@@ -1,4 +1,4 @@
-# Libft 42 School
+# Libft - 42 School
 
 ## About
 
@@ -23,12 +23,6 @@ Then use command **make** inside the libft repository to generate a **libft.a** 
 make -C <libft-path>
 ```
 
-To clean the **.o** files use the command **make clean**.
-
-```sh
-make clean -C <libft-path>
-```
-
 Now you have a static library **.a** with all functions from the [libft](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki/libft1 "libft by header type"). Now you can compile your project with the static library.  
 
 
@@ -42,5 +36,12 @@ Then compile your project like the example below:
 ```sh
 clang main.c -I <libft-path> -L <libft.a-path> -lft
 ```
+
+To clean the **.o** files use the command **make clean**.
+
+```sh
+make clean -C <libft-path>
+```
+
 
 **[Libft Wiki](https://github.com/LuigiEnzoFerrari/42School_Libft/wiki/libft3 "42 functions")**

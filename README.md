@@ -1,5 +1,5 @@
-![norminette](https://github.com/LuigiEnzoFerrari/EasyAsHell/actions/workflows/linter.yml/badge.svg)  
-![build](https://github.com/LuigiEnzoFerrari/EasyAsHell/actions/workflows/build.yml/badge.svg)  
+![norminette](https://github.com/LuigiEnzoFerrari/libft/actions/workflows/linter.yml/badge.svg)  
+![build](https://github.com/LuigiEnzoFerrari/libft/actions/workflows/build.yml/badge.svg)  
 
 # Libft - 42 School  
 

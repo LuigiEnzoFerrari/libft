@@ -1,5 +1,7 @@
-# Libft - 42 School  
 ![norminette](https://github.com/LuigiEnzoFerrari/EasyAsHell/actions/workflows/linter.yml/badge.svg)  
+![build](https://github.com/LuigiEnzoFerrari/EasyAsHell/actions/workflows/build.yml/badge.svg)  
+
+# Libft - 42 School  
 
 ## About  
 Libft is a open source C library, with several function to help all kinds of projects in development. This is a very well organized and more completed version of the [Ecole 42](https://www.42.fr/en/ "42 schoool") libft project.
